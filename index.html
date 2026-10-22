@@ -1,11 +1,413 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="La historia del pádel: desde una pista casera en Acapulco hasta convertirse en uno de los deportes de mayor crecimiento del mundo.">
+    <title>Historia del Pádel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
+    <!-- ===== NAVEGACIÓN ===== -->
+    <header class="nav" id="nav">
+        <a href="#inicio" class="nav__logo">
+            <span class="ball"></span> PÁDEL<strong>HISTORIA</strong>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav__toggle">
+        <label for="nav-toggle" class="nav__burger" aria-label="Abrir menú"><span></span></label>
+        <nav class="nav__menu">
+            <a href="#origen">Origen</a>
+            <a href="#expansion">Expansión</a>
+            <a href="#cronologia">Cronología</a>
+            <a href="#pista">La pista</a>
+            <a href="#leyendas">Leyendas</a>
+            <a href="#hoy">Hoy</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===== HERO: PISTA VISTA DESDE ARRIBA ===== -->
+        <section class="hero" id="inicio">
+            <div class="court court--hero" aria-hidden="true">
+                <div class="court__service court__service--left"></div>
+                <div class="court__service court__service--right"></div>
+                <div class="court__center court__center--left"></div>
+                <div class="court__center court__center--right"></div>
+                <div class="court__net"></div>
+                <span class="hero__ball"></span>
+            </div>
+
+            <div class="hero__content">
+                <p class="eyebrow">Desde 1969</p>
+                <h1 class="hero__title">La historia<br>del <span>pádel</span></h1>
+                <p class="hero__lead">
+                    De una pista improvisada en una casa de Acapulco a millones de jugadores en todo el mundo.
+                    Esta es la historia del deporte de raqueta que conquistó a todos.
+                </p>
+                <div class="hero__actions">
+                    <a href="#origen" class="btn btn--primary">Empezar el partido</a>
+                    <a href="#cronologia" class="btn btn--ghost">Ver cronología</a>
+                </div>
+            </div>
+
+            <a href="#origen" class="scroll-hint" aria-label="Bajar">
+                <span></span>
+            </a>
+        </section>
+
+        <!-- ===== MARCADOR / STATS ===== -->
+        <section class="scoreboard">
+            <div class="scoreboard__item reveal">
+                <span class="scoreboard__num" data-count="1969">1969</span>
+                <span class="scoreboard__label">Año de nacimiento</span>
+            </div>
+            <div class="scoreboard__item reveal">
+                <span class="scoreboard__num">20<small>×</small>10</span>
+                <span class="scoreboard__label">Metros de pista</span>
+            </div>
+            <div class="scoreboard__item reveal">
+                <span class="scoreboard__num">4</span>
+                <span class="scoreboard__label">Jugadores en pista</span>
+            </div>
+            <div class="scoreboard__item reveal">
+                <span class="scoreboard__num">90<small>+</small></span>
+                <span class="scoreboard__label">Países practicándolo</span>
+            </div>
+        </section>
+
+        <!-- ===== ORIGEN ===== -->
+        <section class="section" id="origen">
+            <div class="container split">
+                <div class="split__text reveal">
+                    <p class="eyebrow">Capítulo 01 · El origen</p>
+                    <h2 class="section__title">Acapulco, 1969</h2>
+                    <p>
+                        Todo empezó con un problema de espacio. El empresario mexicano <strong>Enrique Corcuera</strong>
+                        quería construir un frontón en su casa de Acapulco, pero el terreno no daba para tanto.
+                        Así que levantó una pista más pequeña, de unos <strong>20 por 10 metros</strong>, cerrada con
+                        paredes en los fondos y en parte de los laterales para que la vegetación no invadiera el juego.
+                    </p>
+                    <p>
+                        Puso una red en el centro, tomó prestadas ideas del tenis y del frontón, y nació un juego nuevo:
+                        más corto, más social y en el que la pelota podía seguir en juego después de rebotar en la pared.
+                        Lo llamó <em>“paddle”</em>.
+                    </p>
+                </div>
+                <div class="split__visual reveal">
+                    <div class="glass-card">
+                        <span class="glass-card__tag">Dato curioso</span>
+                        <p class="glass-card__quote">
+                            “Las paredes no eran parte del reglamento: eran parte del jardín.”
+                        </p>
+                        <p class="glass-card__foot">
+                            Los muros, que hoy definen el juego, se construyeron inicialmente para contener la vegetación
+                            y la pelota en un espacio reducido.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== EXPANSIÓN ===== -->
+        <section class="section section--court" id="expansion">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="eyebrow">Capítulo 02 · La expansión</p>
+                    <h2 class="section__title">De México al mundo</h2>
+                    <p class="section__intro">
+                        Lo que empezó como un pasatiempo privado cruzó el océano gracias a la amistad,
+                        los veranos en la costa y el boca a boca.
+                    </p>
+                </div>
+
+                <div class="cards">
+                    <article class="card reveal">
+                        <span class="card__number">01</span>
+                        <h3>Marbella, 1974</h3>
+                        <p>
+                            El príncipe <strong>Alfonso de Hohenlohe</strong>, amigo de Corcuera, quedó fascinado
+                            tras visitar Acapulco. De vuelta en España construyó las primeras pistas en el
+                            <strong>Marbella Club</strong>, que se convirtió en el punto de encuentro de la alta sociedad
+                            y en la puerta de entrada del pádel a Europa.
+                        </p>
+                    </article>
+                    <article class="card reveal">
+                        <span class="card__number">02</span>
+                        <h3>Argentina, años 70–80</h3>
+                        <p>
+                            El argentino <strong>Julio Menditeguy</strong>, habitual de Marbella, llevó el juego a su país.
+                            Allí el pádel explotó: miles de pistas, clubes en cada barrio y una generación de jugadores
+                            que dominaría el circuito profesional durante décadas.
+                        </p>
+                    </article>
+                    <article class="card reveal">
+                        <span class="card__number">03</span>
+                        <h3>España, años 90–2000</h3>
+                        <p>
+                            El pádel dejó de ser un deporte de élite para llenar polideportivos y urbanizaciones.
+                            España se convirtió en la gran potencia del deporte y en la sede de los principales
+                            circuitos profesionales.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CRONOLOGÍA ===== -->
+        <section class="section" id="cronologia">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="eyebrow">Capítulo 03 · Cronología</p>
+                    <h2 class="section__title">Punto a punto</h2>
+                </div>
+
+                <ol class="timeline">
+                    <li class="timeline__item reveal">
+                        <span class="timeline__year">1969</span>
+                        <div class="timeline__body">
+                            <h3>Nace el pádel</h3>
+                            <p>Enrique Corcuera construye la primera pista en su casa de Acapulco, México.</p>
+                        </div>
+                    </li>
+                    <li class="timeline__item reveal">
+                        <span class="timeline__year">1974</span>
+                        <div class="timeline__body">
+                            <h3>Llega a Europa</h3>
+                            <p>Alfonso de Hohenlohe abre las primeras pistas en el Marbella Club.</p>
+                        </div>
+                    </li>
+                    <li class="timeline__item reveal">
+                        <span class="timeline__year">1975</span>
+                        <div class="timeline__body">
+                            <h3>Salto a Argentina</h3>
+                            <p>Julio Menditeguy introduce el deporte en Argentina, donde vivirá su primer gran boom.</p>
+                        </div>
+                    </li>
+                    <li class="timeline__item reveal">
+                        <span class="timeline__year">1991</span>
+                        <div class="timeline__body">
+                            <h3>Nace la FIP</h3>
+                            <p>Se funda en Madrid la Federación Internacional de Pádel para unificar reglas y competiciones.</p>
+                        </div>
+                    </li>
+                    <li class="timeline__item reveal">
+                        <span class="timeline__year">1992</span>
+                        <div class="timeline__body">
+                            <h3>Primer Mundial</h3>
+                            <p>España acoge el primer Campeonato del Mundo, coincidiendo con el año de la Expo de Sevilla.</p>
+                        </div>
+                    </li>
+                    <li class="timeline__item reveal">
+                        <span class="timeline__year">2013</span>
+                        <div class="timeline__body">
+                            <h3>World Padel Tour</h3>
+                            <p>Nace el circuito profesional que llevaría el pádel a la televisión y a nuevos mercados.</p>
+                        </div>
+                    </li>
+                    <li class="timeline__item reveal">
+                        <span class="timeline__year">2022</span>
+                        <div class="timeline__body">
+                            <h3>Premier Padel</h3>
+                            <p>Arranca el nuevo circuito impulsado por la FIP, con torneos en grandes capitales del mundo.</p>
+                        </div>
+                    </li>
+                    <li class="timeline__item reveal">
+                        <span class="timeline__year">Hoy</span>
+                        <div class="timeline__body">
+                            <h3>Fenómeno global</h3>
+                            <p>Millones de jugadores en decenas de países y un crecimiento imparable en Europa, Oriente Medio y América.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ===== LA PISTA ===== -->
+        <section class="section section--court" id="pista">
+            <div class="container split split--reverse">
+                <div class="split__text reveal">
+                    <p class="eyebrow">Capítulo 04 · El escenario</p>
+                    <h2 class="section__title">Anatomía de una pista</h2>
+                    <ul class="specs">
+                        <li><strong>20 × 10 m</strong><span>Superficie de juego rectangular</span></li>
+                        <li><strong>88 cm</strong><span>Altura de la red en el centro (92 cm en los extremos)</span></li>
+                        <li><strong>6,95 m</strong><span>Distancia de la red a la línea de saque</span></li>
+                        <li><strong>3 m</strong><span>Altura mínima de las paredes de fondo de cristal</span></li>
+                        <li><strong>Césped artificial</strong><span>Con arena de sílice para controlar el bote</span></li>
+                    </ul>
+                </div>
+
+                <div class="split__visual reveal">
+                    <div class="court court--diagram" aria-label="Diagrama de una pista de pádel">
+                        <div class="court__service court__service--left"></div>
+                        <div class="court__service court__service--right"></div>
+                        <div class="court__center court__center--left"></div>
+                        <div class="court__center court__center--right"></div>
+                        <div class="court__net"></div>
+                        <span class="court__label court__label--len">20 m</span>
+                        <span class="court__label court__label--wid">10 m</span>
+                        <span class="player player--1"></span>
+                        <span class="player player--2"></span>
+                        <span class="player player--3"></span>
+                        <span class="player player--4"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== REGLAS BÁSICAS ===== -->
+        <section class="section">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="eyebrow">Capítulo 05 · El juego</p>
+                    <h2 class="section__title">Reglas que lo cambian todo</h2>
+                </div>
+                <div class="rules">
+                    <div class="rule reveal">
+                        <span class="rule__icon">↘</span>
+                        <h3>Saque por abajo</h3>
+                        <p>Se saca botando la bola y golpeándola por debajo de la cintura, en diagonal al cuadro contrario.</p>
+                    </div>
+                    <div class="rule reveal">
+                        <span class="rule__icon">⟲</span>
+                        <h3>Las paredes juegan</h3>
+                        <p>Tras botar en el suelo, la bola puede rebotar en el cristal y seguir en juego. Ahí está la magia.</p>
+                    </div>
+                    <div class="rule reveal">
+                        <span class="rule__icon">✕</span>
+                        <h3>Siempre en pareja</h3>
+                        <p>Se juega dos contra dos. La comunicación con tu compañero vale tanto como un buen golpe.</p>
+                    </div>
+                    <div class="rule reveal">
+                        <span class="rule__icon">15</span>
+                        <h3>Puntuación de tenis</h3>
+                        <p>15, 30, 40 y juego. Sets a seis juegos y partidos al mejor de tres sets.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== LEYENDAS ===== -->
+        <section class="section section--court" id="leyendas">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="eyebrow">Capítulo 06 · Leyendas</p>
+                    <h2 class="section__title">Los nombres que hicieron historia</h2>
+                </div>
+                <div class="legends">
+                    <article class="legend reveal">
+                        <div class="legend__avatar">FB</div>
+                        <h3>Fernando Belasteguín</h3>
+                        <p class="legend__country">Argentina</p>
+                        <p>“Bela”. Número uno del mundo durante más de quince años consecutivos. Un icono absoluto.</p>
+                    </article>
+                    <article class="legend reveal">
+                        <div class="legend__avatar">JM</div>
+                        <h3>Juan Martín Díaz</h3>
+                        <p class="legend__country">Argentina</p>
+                        <p>Pareja histórica de Bela y uno de los jugadores más talentosos y creativos de la historia.</p>
+                    </article>
+                    <article class="legend reveal">
+                        <div class="legend__avatar">AS</div>
+                        <h3>Alejandra Salazar</h3>
+                        <p class="legend__country">España</p>
+                        <p>Referente del pádel femenino durante dos décadas y múltiple número uno mundial.</p>
+                    </article>
+                    <article class="legend reveal">
+                        <div class="legend__avatar">AT</div>
+                        <h3>Agustín Tapia</h3>
+                        <p class="legend__country">Argentina</p>
+                        <p>El mago de la nueva generación: espectáculo, potencia y golpes imposibles.</p>
+                    </article>
+                    <article class="legend reveal">
+                        <div class="legend__avatar">AG</div>
+                        <h3>Alejandro Galán</h3>
+                        <p class="legend__country">España</p>
+                        <p>Pegada demoledora y uno de los grandes dominadores del circuito moderno.</p>
+                    </article>
+                    <article class="legend reveal">
+                        <div class="legend__avatar">GT</div>
+                        <h3>Gemma Triay</h3>
+                        <p class="legend__country">España</p>
+                        <p>Número uno mundial y una de las jugadoras más completas del pádel actual.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== HOY ===== -->
+        <section class="section" id="hoy">
+            <div class="container split">
+                <div class="split__text reveal">
+                    <p class="eyebrow">Capítulo 07 · El presente</p>
+                    <h2 class="section__title">El deporte que más crece</h2>
+                    <p>
+                        Hoy el pádel se juega en todos los continentes. Italia, Suecia, Francia, Países Bajos, Emiratos
+                        o Estados Unidos abren pistas a un ritmo sin precedentes, y el circuito profesional llena estadios
+                        con pistas montadas en plazas emblemáticas.
+                    </p>
+                    <p>
+                        Su secreto sigue siendo el mismo que en 1969: es fácil empezar, es divertido desde el primer día
+                        y siempre se juega con amigos.
+                    </p>
+                </div>
+                <div class="split__visual reveal">
+                    <div class="bars">
+                        <div class="bars__row"><span>España</span><div class="bars__track"><i style="--w:100%"></i></div></div>
+                        <div class="bars__row"><span>Argentina</span><div class="bars__track"><i style="--w:80%"></i></div></div>
+                        <div class="bars__row"><span>Italia</span><div class="bars__track"><i style="--w:70%"></i></div></div>
+                        <div class="bars__row"><span>Suecia</span><div class="bars__track"><i style="--w:55%"></i></div></div>
+                        <div class="bars__row"><span>Francia</span><div class="bars__track"><i style="--w:45%"></i></div></div>
+                        <p class="bars__note">Popularidad relativa del pádel por país (ilustrativo).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA ===== -->
+        <section class="cta">
+            <div class="cta__inner reveal">
+                <h2>¿Echamos un partido?</h2>
+                <p>Más de cincuenta años después, la mejor forma de conocer la historia del pádel es seguir escribiéndola en la pista.</p>
+                <a href="#inicio" class="btn btn--primary">Volver al saque inicial</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p><span class="ball"></span> Historia del Pádel · Una landing page hecha con pasión por el deporte</p>
+    </footer>
+
+    <script>
+        // Aparición de elementos al hacer scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+        // Navegación compacta al hacer scroll
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('nav--scrolled', window.scrollY > 40);
+        });
+
+        // Cerrar menú móvil al pulsar un enlace
+        document.querySelectorAll('.nav__menu a').forEach((link) => {
+            link.addEventListener('click', () => {
+                document.getElementById('nav-toggle').checked = false;
+            });
+        });
+    </script>
 </body>
 </html>
